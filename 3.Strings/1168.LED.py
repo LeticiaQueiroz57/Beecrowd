@@ -17,9 +17,9 @@ for i in range(n):
             y += 4
         elif x[j]=="6" or x[j]=="9" or x[j]=="0":
             y += 6
-        elif x[j]==7:
+        elif x[j]=="7":
             y += 3
-        else:
+        elif x[j]=="8":
             y += 7
 
     print(f"{y} leds")
