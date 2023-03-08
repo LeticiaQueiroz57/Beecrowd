@@ -1,19 +1,9 @@
-def mult():
-    if (y==x):
-        print("Sao Multiplos")
-    else:
-        print("Nao sao Multiplos")
+a, b = map(int, input().split())
 
-a, b = map(float,input().split())
+x = max(a,b)
+y = min(a,b)
 
-if (a>b):
-    x = a/b
-    y = int(x)
-    mult()
+if (x%y!=0):
+    print("Nao sao Multiplos")
 else:
-    x = b/a
-    y = int(x)
-    mult()
-
-if (a==b): 
     print("Sao Multiplos")
