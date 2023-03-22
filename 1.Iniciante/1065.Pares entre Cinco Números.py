@@ -4,22 +4,17 @@ n3 = int(input())
 n4 = int(input())
 n5 = int(input())
 
-def parImpar(x):
-    if (x%2==0):
-        return True
-    else:
-        return False
+qtd = 0
 
-p = []
-p.append(parImpar(n1))
-p.append(parImpar(n2))
-p.append(parImpar(n3))
-p.append(parImpar(n4))
-p.append(parImpar(n5))
+if (n1%2==0):
+    qtd += 1
+if (n2%2==0):
+    qtd += 1
+if (n3%2==0):
+    qtd += 1
+if (n4%2==0):
+    qtd += 1
+if (n5%2==0):
+    qtd += 1
 
-x = 0
-for i in range (5):
-    if (p[i]==True):
-        x += 1
-
-print(x,"valores pares")
+print(f"{qtd} valores pares")
